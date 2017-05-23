@@ -8,6 +8,6 @@
 	"instvars" : [
 		"logFile"
 	],
-	"name" : "G9Logger",
+	"name" : "SimpleLogger",
 	"type" : "normal"
 }
