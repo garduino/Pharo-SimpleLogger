@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "GermanArduino 7/13/2010 19:41",
+	"super" : "Object",
+	"category" : "SimpleLogger",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"logFile"
+	],
+	"name" : "G9Logger",
+	"type" : "normal"
+}
