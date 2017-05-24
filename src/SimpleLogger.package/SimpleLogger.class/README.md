@@ -1,4 +1,4 @@
-A G9Logger is a simple logger for Pharo/Squeak.
+SimpleLogger  is a simple logger for Pharo/Squeak.
 
 Developed by Germán S. Arduino on July 2010.
 
