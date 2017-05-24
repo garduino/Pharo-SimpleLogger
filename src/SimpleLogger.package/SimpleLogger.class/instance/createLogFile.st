@@ -5,6 +5,9 @@ createLogFile
 
 fileName := DateAndTime now asString.
 
+(File named: fileName) writeStreamDo: [ :stream | stream nextPutAll: ''------------------------------------------------------------------------------',String crlf.' ].
+fileName openForWrite.
+
 "
 	(File named: 'asd.txt') writeStreamDo: [ :stream | stream nextPutAll: 'aaa' ].
 	file := (File named: 'asd.txt') openForWrite.
