@@ -1,13 +1,19 @@
-actions
+initialization
 createLogFile
 
 | fileName  |
 
-fileName := DateAndTime now asString.
+"fileName := DateAndTime now asString, '.txt'."
 
-logFile := File named: fileName,'.txt' asFileReference fullName.
+fileName := 'pepe.txt'.
 
-logFile openForAppend.
+logFile := (File named: fileName) writeStream.
+
+logFile nextPutAll: '------------------------------------------------------------------------------',String crlf.
+
+"logFile := File named: fileName,'.txt' asFileReference fullName."
+
+" logFile openForAppend."
 
 "
 	(File named: 'asd.txt') writeStreamDo: [ :stream | stream nextPutAll: 'aaa' ].
