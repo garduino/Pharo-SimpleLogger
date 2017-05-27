@@ -10,6 +10,11 @@ fileName := 'pepe.txt'.
 logFile := (File named: fileName) writeStream.
 
 logFile nextPutAll: '------------------------------------------------------------------------------',String crlf.
+	logFile nextPutAll: 'SimpleLogger started at:  ', DateAndTime now asString, String crlf.
+
+logFile nextPutAll: '------------------------------------------------------------------------------',String crlf.
+
+
 
 "logFile := File named: fileName,'.txt' asFileReference fullName."
 
