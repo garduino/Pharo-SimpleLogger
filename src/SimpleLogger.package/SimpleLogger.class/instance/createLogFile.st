@@ -4,6 +4,8 @@ createLogFile
 	"fileName := DateAndTime now asString, '.txt'."
 	fileName := 'pepe.txt'.
 	logFile := (File named: fileName) writeStream.
+	"Lo anterior crea el archivo, pero luego salta el debugger al querer escribir"
+	
 	logFile
 		nextPutAll:
 			'------------------------------------------------------------------------------';
